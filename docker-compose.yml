@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  que_3:
+    image: php:8.0-cli
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - 80:80
+    command: 
+    - sh
+    - -c
+    - |
+      docker-php-ext-install mysqli
+      php -S 0.0.0.0:80
+  MariaDB: 
+    image: mariadb:latest
+    volumes:
+      - workDB:/var/lib/mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: zsxdcf123F
+      MARIADB_USER: root
+
+  adminer:
+    image: adminer:latest
+    ports:
+      - 3000:3000
+
+volumes:
+  workDB:

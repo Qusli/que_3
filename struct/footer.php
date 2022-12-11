@@ -8,10 +8,10 @@
             <p style="font-family: 'Poppins',sans-serif;font-style: normal;font-weight: 400;font-size: 27px;line-height: 40px;color: #707070;">info@marico.co</p>
         </span>
         <nav class="nav">
-            <a href="">About</a>
-            <a href="">Pricing</a>
-            <a href="">Blog</a>
-            <a href="">Sing in</a>
+            <a href="/about.php">About</a>
+            <a href="/pricing.php">Pricing</a>
+            <a href="/blog.php">Blog</a>
+            <a href="/login.php">Sing in</a>
         </nav>
     </section>
 </footer>
